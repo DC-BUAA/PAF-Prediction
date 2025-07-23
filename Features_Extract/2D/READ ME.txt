@@ -1,0 +1,13 @@
+Main_FeatExt_BFD：单独提取蝴蝶图特征主函数
+Function_FeatExt_BFD：蝴蝶图特征提取函数，包括间期类、幅值类、频率类、波形类、SVD类、LBP类、互相关类特征
+Preprocessing_BFD：调整bfd数据排列格式，36*1000或64*1000
+PK_FineTurning：对峰值定位微调，主要是对P峰、R峰和T峰位置定位的微调，并保存各个通道微调后的P峰、R峰和T峰定位
+Find_Max_Peak：PK_FineTurning内函数，对根据对检测到的峰进行微调
+Struct_to_Vertical：整理输出成一列，并给上编号，方便后期批量提取特征
+Wave_Amp_FeatExt：提取输入波形各通道的幅值特征，包括每个通道的最大值、均值、标准差、变异系数、范围、积分、面积
+Wave_Corr_FeatExt：提取输入波形各通道的相关系数特征，
+Wave_Frequency_FeatExt：提取输入波形各通道的频率特征，包括每个通道的主频频率、主频幅值、频谱熵、频谱能量、中心频率、中位功率、最大功率
+Wave_LBP_FeatExt：提取指定波形各通道的LBP算子变换后的直方图10个bin值特征
+Wave_Shape_FeatExt：提取输入波形各通道的波形特征，包括每个通道的偏度因子、峭度因子、波形因子、峰值因子、脉冲因子、裕度因子、波动指数
+Wave_SVD_FeatExt：提取指定波段的SVD特征，包括奇异值的香农熵、Tsallis熵和Rényi熵，前k个主成分的"贡献率"
+Wave_SVD_Restructure：Wave_SVD_FeatExt内函数，对多通道信号重采样、归一化和降维。获取SVD分解后的左右奇异矩阵UV

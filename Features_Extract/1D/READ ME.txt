@@ -1,0 +1,3 @@
+Main_FeatExt_baseDate_1D：The main function for extracting the characteristics of original data
+Function_FeatExt_baseDate_1D：The function for extracting the features of the original data, including inter-period features, amplitude features, frequency features, waveform features, SVD features, LBP features, and cross-correlation features.
+Struct_to_Vertical：Sort the output into a single column and assign numbers to each item, which will facilitate the batch extraction of features in the future.
