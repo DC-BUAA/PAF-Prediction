@@ -11,6 +11,7 @@ This project implements a multi-language collaborative machine learning classifi
 
 Function: Data segmentation, noise reduction (UPEMD)
 
+
 **2. Features_Extract (MATLAB)**
 
 Function: Feature extraction, including one-dimensional and two-dimensional
@@ -74,6 +75,16 @@ Curl_MCV_FeatExt: Curl map MCV (Mean Curl Vector) feature extraction function.
 
 Struct_to_Vertical：Sort the output into a single column and assign numbers to each item, which will facilitate the batch extraction of features in the future.
 
+
 **3. Stacking_SGXE (Python)**
 
 Function：Feature Engineering，Model training and prediction，Comparative Study of Multiple Classifiers
+
+
+**4. Environmental requirements**
+
+MATLAB	R2021a+
+
+Python	3.8+
+
+PythonDependence	numpy, pandas, scikit-learn, xgboost
